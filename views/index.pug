@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  form(id="indexForm" style="display: block")
+    a(href="/register.html") Register
+    br
+    br
+    a(href="/login.html") Login
+  form(id="loggedInForm" style="display: none")
+    button(class="btn" id="logOutBtn" type="click") Logout
+    p(id="emailField")
+  div(id="itemContainer" style="display: none")
+    input(type="text" id="add-item" placeholder="Add new item")
+    div(id="Items")
+        h3 All Items: 
+        ul(id="allItems")
+  p(id="indexError")
+  script(src="/javascripts/index.js")
