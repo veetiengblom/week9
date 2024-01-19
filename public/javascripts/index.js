@@ -31,7 +31,6 @@ const checkLogIn = async () => {
       for (let i = 0; i < resp.items.length; i++) {
         let oneItem = document.createElement("li");
         oneItem.innerText = resp.items[i];
-        console.log("Item: ", resp.items[i]);
         listOfItems.appendChild(oneItem);
       }
     } catch (error) {
