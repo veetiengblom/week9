@@ -28,7 +28,6 @@ const checkLogIn = async () => {
       emailField.innerText = data.email;
 
       const resp = await getItems();
-      console.log(resp);
       for (let i = 0; i < resp.items.length; i++) {
         let oneItem = document.createElement("li");
         oneItem.innerText = resp.items[i];
